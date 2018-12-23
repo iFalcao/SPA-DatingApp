@@ -21,4 +21,8 @@ export class AuthService {
         })
       );
   }
+
+  register(model: object) {
+    return this.http.post(this.baseUrl + 'register', model);
+  }
 }
