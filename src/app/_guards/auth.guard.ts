@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
       return true;
     }
 
-    this.alertify.error('This area is restricted to registered members.');
+    this.alertify.error('This area is restricted to registered users.');
     this.router.navigate(['/home']);
     return false;
   }
